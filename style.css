@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Wanted Sans';
+  font-family: "Wanted Sans";
   src: url(fonts/WantedSans-Bold.otf);
 }
 
@@ -8,72 +8,68 @@
 }
 
 body {
-    background-image: url("pictures/background.png");
-    background-size: cover;
+  background-image: url("pictures/background.png");
+  background-size: cover;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-    font-family: "Wanted Sans";
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    
+  font-family: "Wanted Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .black-border {
-    border-style: solid;
-    border-color: black;
-    border-width: 4px;
+  width: 100vw;
+  height: 100vh;
+}
 
-    border-radius: 20px;
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.3);
+.black-border {
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
 
-    padding: 200px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.3);
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
+  padding: 200px;
 
-    gap: 50px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 
-  .input1 {
-    height: 35px;
-    width: 300px;
+  gap: 50px;
+}
 
-    &:focus {
-      transform: scale(1.1);
-    }
+.input1 {
+  height: 35px;
+  width: 300px;
 
-    font-size: 20px;
-    border-radius: 5px;
-    background: transparent;
-    font-family: "Wanted Sans";
-    transition: var(--default-animation);
-
+  &:focus {
+    transform: scale(1.1);
   }
 
+  font-size: 20px;
+  border-radius: 5px;
+  background: transparent;
+  font-family: "Wanted Sans";
+  transition: var(--default-animation);
+}
 
-  .input2 {
-    height: 35;
-    width: 200;
-    transition: var(--default-animation);
-    &:focus {
-      transform: scale(1.1);
-    }
-
-    font-size: 20px;
-    border-radius: 5px;
-    background: transparent;
-    font-family: "Wanted Sans";
-    transition: var(--default-animation);
+.input2 {
+  height: 35;
+  width: 200;
+  transition: var(--default-animation);
+  &:focus {
+    transform: scale(1.1);
   }
+
+  font-size: 20px;
+  border-radius: 5px;
+  background: transparent;
+  font-family: "Wanted Sans";
+  transition: var(--default-animation);
+}
