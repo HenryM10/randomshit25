@@ -11,16 +11,17 @@
     <div class="wrapper">
         <div class="black-border">
             <p class="welcomingText">Welcome!</p>
-            <img class="qrcode" src="pictures/qr.png" alt="">
-            <p class="login2" >Or log in with: </p>
-            <div class="form">
-                <p class="email"> Enter your email</p>
-                <input class="input1" type="text"/>
-                <p class="password"> Enter your password</p>
-                <input class="input2" type="text">
-
-                <div class="loginclass" >
-                    <button class="login">Log In</button>
+            <div class="row"> <!-- Left part within the black-border box -->
+                <div class="form">
+                    <label for="email" class="input-label">Enter your email</label>
+                    <input type="text" class="text-input" id="email"/>
+                    <label for="password" class="input-label">Enter your password</label>
+                    <input type="text" class="text-input" id="password">
+                    <button class="login-button">Log In</button>
+                </div>
+                <div>  <!-- Right part within the black-border box -->
+                    <div class="alt-login">Or log in with:</div>
+                    <img class="qrcode" src="pictures/qr.png" alt="">
                 </div>
             </div>
         </div>
