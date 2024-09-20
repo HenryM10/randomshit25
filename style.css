@@ -97,11 +97,9 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
-
-  flex-grow: 1;
-  flex-shrink: 0;
-  
+  gap: 1rem; 
 }
+
 
 .email {
   transform: translateY(20px);
