@@ -1,79 +1,154 @@
 @font-face {
-  font-family: 'Wanted Sans';
+  font-family: "Wanted Sans";
   src: url(fonts/WantedSans-Bold.otf);
 }
 
 :root {
-  --default-animation: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+  --default-animation: all 1.5s cubic-bezier(0.10, 1, 0.32, 1);
 }
 
 body {
-    background-image: url("pictures/background.png");
-    background-size: cover;
+  background-image: url("pictures/background.png");
+  background-size: cover;
 
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-    font-family: "Wanted Sans";
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    
+  font-family: "Wanted Sans";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.black-border {
+  border-style: solid;
+  border-color: black;
+  border-width: 4px;
+
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.3);
+
+  padding: 5rem 4rem;
+  max-width: 40rem;
+  min-height: 400px;
+
+  flex-grow: 1; 
+  flex-shrink: 0;
+
+  gap: 50px;
+}
+
+.welcomingText {
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.input1 {
+  height: 35px;
+  width: 300px;
+  margin-bottom: 1rem;
+  transform: translateY(20px);
+
+  &:focus {
+    transform: translateY(30px);
+    width: 315px;
   }
+
+  font-size: 20px;
+  border-radius: 5px;
+  background: transparent;
+  font-family: "Wanted Sans";
+  transition: var(--default-animation);
+
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.input2 {
+  height: 35px;
+  width: 300px;
+  transition: var(--default-animation);
+  transform: translateY(20px);
+
+  &:focus {
+    transform: translateY(30px);
+    width: 315px;
+  }
+
+  font-size: 20px;
+  border-radius: 5px;
+  background: transparent;
+  font-family: "Wanted Sans";
+  transition: var(--default-animation);
+
+  flex-grow: 1; 
+  flex-shrink: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  flex-grow: 1;
+  flex-shrink: 0;
   
-  .black-border {
-    border-style: solid;
-    border-color: black;
-    border-width: 4px;
+}
 
-    border-radius: 20px;
-    backdrop-filter: blur(8px);
-    background-color: rgba(255, 255, 255, 0.3);
+.email {
+  transform: translateY(20px);
+}
 
-    padding: 200px;
+.password {
+  transform: translateY(20px);
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    
+.qrcode {
+  position: absolute;
+  width: 250px;
+  margin-left: 400px;
+  margin-bottom: 100px;
+}
 
-    gap: 50px;
+.login2 {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+.loginclass {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.login {
+  cursor: pointer;
+  display: flex;
+
+  border-color: rgba(0, 0, 0, 0.226);
+  border: 2px solid black;
+  background: transparent;
+  transition: var(--default-animation);
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  width: 250px;
+  height: 40px;
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .input1 {
-    height: 35px;
-    width: 300px;
-
-    &:focus {
-      transform: scale(1.1);
-    }
-
-    font-size: 20px;
-    border-radius: 5px;
-    background: transparent;
-    font-family: "Wanted Sans";
-    transition: var(--default-animation);
-
-  }
-
-
-  .input2 {
-    height: 35;
-    width: 200;
-    transition: var(--default-animation);
-    &:focus {
-      transform: scale(1.1);
-    }
-
-    font-size: 20px;
-    border-radius: 5px;
-    background: transparent;
-    font-family: "Wanted Sans";
-    transition: var(--default-animation);
-  }
+}
