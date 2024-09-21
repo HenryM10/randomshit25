@@ -1,2 +1,2 @@
-const loginBtn = document.getElementById("login");
+const loginBtn = document.getElementById("login-button");
 

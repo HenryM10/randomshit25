@@ -44,6 +44,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  align-items: center;
 }
 
 .welcomingText {
@@ -90,7 +91,7 @@ body {
 
 .qrcode {
   width: 250px;
-  
+  min-width: 250px;
 }
 
 .alt-login {
