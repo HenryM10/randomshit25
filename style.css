@@ -30,6 +30,9 @@ body {
   border-color: black;
   border-width: 4px;
 
+  width: 600px;
+  height: 350px;
+
   border-radius: 20px;
   backdrop-filter: blur(8px);
   background-color: rgba(255, 255, 255, 0.3);
@@ -54,7 +57,7 @@ body {
   margin-bottom: 1rem;
 
   &:focus {
-    transform: translateY(30px);
+    transform: translateY(10px);
     width: 315px;
   }
 
@@ -72,17 +75,22 @@ body {
 
   flex-grow: 1;
   flex-shrink: 0;
-  
 }
-
 
 .input-label {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
+.alt-loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .qrcode {
   width: 250px;
+  
 }
 
 .alt-login {
@@ -91,6 +99,8 @@ body {
 
 .login-button {
   display: flex;
+
+  cursor: pointer;
 
   border: 2px solid black;
   border-color: rgba(0, 0, 0, 0.226);
@@ -107,5 +117,7 @@ body {
 
   &:active {
     background-color: rgba(0, 0, 0, 0.5);
+    transition: var(--default-animation);
   }
+
 }
