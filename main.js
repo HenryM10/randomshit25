@@ -1,17 +1,15 @@
-const loginButton = document.querySelector('.login-button') as HTMLButtonElement | null;
-const inputs = document.querySelectorAll('.text-input') as NodeListOf<HTMLInputElement>;
+"use strict";
+const loginButton = document.querySelector('.login-button');
+const inputs = document.querySelectorAll('.text-input');
 const unfilledboxes = document.getElementById('error1');
-
-
-
-loginButton?.addEventListener('click', function() {
-
+loginButton === null || loginButton === void 0 ? void 0 : loginButton.addEventListener('click', function () {
     const anyEmpty = Array.from(inputs).some(input => input.value.trim() === '');
     if (anyEmpty) {
         if (unfilledboxes) {
             unfilledboxes.innerText = "Please fill in all the gaps!";
         }
-    } else {
+    }
+    else {
         if (unfilledboxes) {
             unfilledboxes.innerText = "";
         }

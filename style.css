@@ -58,11 +58,11 @@ body {
   margin-bottom: 1rem;
 
   &:focus {
-    transform: translateY(10px);
-    width: 315px;
+    transform: scale(1.05);
+    position: relative;
   }
 
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 5px;
   background: transparent;
   font-family: "Wanted Sans";
@@ -92,6 +92,7 @@ body {
 .qrcode {
   width: 250px;
   min-width: 250px;
+  position: relative
 }
 
 .alt-login {
@@ -116,9 +117,24 @@ body {
   width: 250px;
   height: 40px;
 
-  &:active {
+  &:hover {
+    transition: 0.8s;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: var(--default-animation);
   }
 
+  &:active {
+    background-color: rgba(0, 0, 0, 0);
+    --default-animation: all 1.5s cubic-bezier(0.1, 1, 0.35, 0.1);
+  }
+
+}
+
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#error1 {
+  font-size: 15px;
 }
