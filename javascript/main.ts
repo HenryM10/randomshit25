@@ -1,6 +1,7 @@
 const loginButton = document.querySelector('.login-button') as HTMLButtonElement | null;
 const inputs = document.querySelectorAll('.text-input') as NodeListOf<HTMLInputElement>;
 const unfilledboxes = document.getElementById('error1');
+const button1 = document.getElementsByClassName('btn1')
 
 loginButton?.addEventListener('click', function() {
 
@@ -17,3 +18,4 @@ loginButton?.addEventListener('click', function() {
         window.location.replace("index.html"); 
     }
 });
+

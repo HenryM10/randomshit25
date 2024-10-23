@@ -1,4 +1,76 @@
+
 body {
     background-image: url(../pictures/background.png);
     background-size: cover;
+    overflow: hidden;
 }
+
+.p1 {
+    font-family: "Wanted Sans";
+}
+
+@font-face {
+    font-family: "Wanted Sans";
+    src: url(../fonts/WantedSans-Bold.otf);
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+
+    width: 100vw;
+    height: 70vh;
+}
+
+.input1 {
+
+    background: none;
+    border: black;
+    text-align: start;
+
+    border: none;
+    outline: none;
+    overflow: auto;
+}
+
+.blackborder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+
+    width: 35em;
+    height: 20em;
+    backdrop-filter: blur(5px);
+}
+
+.buttons {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.btn1 {
+    width: 75px;
+    height: 20px;
+    font-family: "Wanted Sans";
+    border: none;
+    border-radius: 50px;
+}
+
+.headings {
+    display: flex;
+    justify-content: center;
+    font-family: "Wanted Sans";
+    font-size: 40px;
+}
+
